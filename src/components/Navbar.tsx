@@ -7,7 +7,7 @@ const navItems = [
   { name: "Challenges", href: "#challenges" },
   { name: "Success Stories", href: "#success-stories" },
   { name: "Timeline", href: "#timeline" },
-  { name: "Sponsorship", href: "#sponsorship" },
+  { name: "Sponsorship", href: "#sponsorship", highlight: true },
   { name: "Contact", href: "#contact" }
 ];
 
@@ -51,15 +51,23 @@ const Navbar = () => {
             <a 
               key={item.name}
               href={item.href}
-              className="text-gray-300 hover:text-space-cyan transition-colors"
+              className={`${
+                item.highlight 
+                  ? "text-space-cyan font-bold" 
+                  : "text-gray-300 hover:text-space-cyan"
+              } transition-colors`}
             >
               {item.name}
             </a>
           ))}
         </div>
 
-        {/* Apply Button */}
-        <div className="hidden lg:block">
+        {/* Apply & Sponsor Buttons */}
+        <div className="hidden lg:flex gap-4">
+          <Button className="bg-space-light-blue hover:bg-space-cyan text-background"
+            onClick={() => document.getElementById('sponsorship')?.scrollIntoView({ behavior: 'smooth' })}>
+            Sponsor Now
+          </Button>
           <Button className="bg-space-cyan hover:bg-space-light-blue text-background">
             Apply Now
           </Button>
@@ -85,7 +93,7 @@ const Navbar = () => {
       {/* Mobile Menu */}
       <div 
         className={`lg:hidden absolute w-full bg-background/95 backdrop-blur-md transition-all duration-300 ${
-          mobileMenuOpen ? "max-h-96 border-b border-white/10" : "max-h-0 overflow-hidden"
+          mobileMenuOpen ? "max-h-screen border-b border-white/10" : "max-h-0 overflow-hidden"
         }`}
       >
         <div className="px-4 py-4 space-y-4">
@@ -93,12 +101,25 @@ const Navbar = () => {
             <a 
               key={item.name}
               href={item.href}
-              className="block text-gray-300 hover:text-space-cyan transition-colors"
+              className={`block ${
+                item.highlight 
+                  ? "text-space-cyan font-bold" 
+                  : "text-gray-300 hover:text-space-cyan"
+              } transition-colors`}
               onClick={() => setMobileMenuOpen(false)}
             >
               {item.name}
             </a>
           ))}
+          <Button 
+            className="w-full bg-space-light-blue hover:bg-space-cyan text-background mb-2"
+            onClick={() => {
+              document.getElementById('sponsorship')?.scrollIntoView({ behavior: 'smooth' });
+              setMobileMenuOpen(false);
+            }}
+          >
+            Sponsor Now
+          </Button>
           <Button 
             className="w-full bg-space-cyan hover:bg-space-light-blue text-background"
             onClick={() => setMobileMenuOpen(false)}

@@ -33,12 +33,27 @@ const HeroSection = () => {
         <p className="text-lg mb-8 text-gray-300 max-w-2xl mx-auto">
           Join the next generation of space innovators tackling Earth's most pressing challenges through space technology and collaboration.
         </p>
-        <Button 
-          size="lg" 
-          className="bg-space-cyan hover:bg-space-light-blue text-background text-lg font-bold px-8 py-6 rounded-md transition-all transform hover:scale-105"
-        >
-          Apply Now
-        </Button>
+        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <Button 
+            size="lg" 
+            className="bg-space-cyan hover:bg-space-light-blue text-background text-lg font-bold px-8 py-6 rounded-md transition-all transform hover:scale-105"
+          >
+            Apply Now
+          </Button>
+          <Button 
+            size="lg" 
+            className="bg-space-light-blue hover:bg-space-cyan text-background text-lg font-bold px-8 py-6 rounded-md transition-all transform hover:scale-105"
+            onClick={() => document.getElementById('sponsorship')?.scrollIntoView({ behavior: 'smooth' })}
+          >
+            Become a Sponsor
+          </Button>
+        </div>
+      </div>
+      
+      <div className="absolute bottom-10 w-full text-center">
+        <p className="text-space-cyan font-bold animate-bounce">
+          Scroll to discover sponsorship opportunities
+        </p>
       </div>
     </section>
   );

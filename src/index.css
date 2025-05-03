@@ -16,16 +16,17 @@
     --popover: 222 47% 11%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 210 100% 35%;
+    /* Enhanced SGAC blues */
+    --primary: 210 90% 40%;
     --primary-foreground: 210 40% 98%;
 
-    --secondary: 196 100% 50%;
+    --secondary: 196 100% 55%;
     --secondary-foreground: 222 47% 11%;
 
     --muted: 217.2 32.6% 17.5%;
     --muted-foreground: 215 20.2% 65.1%;
 
-    --accent: 196 100% 50%;
+    --accent: 196 100% 55%;
     --accent-foreground: 222 47% 11%;
 
     --destructive: 0 62.8% 30.6%;
@@ -67,6 +68,71 @@
     }
     100% {
       opacity: 0.6;
+    }
+  }
+
+  /* Enhanced SGAC color classes */
+  .text-space-cyan {
+    @apply text-[#33C3F0];
+  }
+
+  .text-space-light-blue {
+    @apply text-[#0FA0CE];
+  }
+
+  .text-space-blue {
+    @apply text-[#1EAEDB];
+  }
+
+  .bg-space-cyan {
+    @apply bg-[#33C3F0];
+  }
+
+  .bg-space-light-blue {
+    @apply bg-[#0FA0CE];
+  }
+
+  .bg-space-blue {
+    @apply bg-[#1EAEDB];
+  }
+
+  .border-space-cyan {
+    @apply border-[#33C3F0];
+  }
+
+  .bg-space-gradient {
+    background: linear-gradient(180deg, rgba(17,24,39,1) 0%, rgba(14,22,41,1) 100%);
+  }
+
+  /* Animation for orbit */
+  .animate-orbit {
+    animation: orbit 20s linear infinite;
+    transform-origin: center;
+  }
+  
+  @keyframes orbit {
+    0% {
+      transform: rotate(0deg) translateX(100px) rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg) translateX(100px) rotate(-360deg);
+    }
+  }
+
+  /* Fade in animation */
+  .animate-fade-in {
+    opacity: 0;
+    animation: fadeIn 0.8s ease forwards;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
     }
   }
 }

@@ -3,23 +3,28 @@ import { Mail } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
-  
+
   return (
     <footer className="py-10 px-4 border-t border-white/10 bg-background/95">
       <div className="max-w-6xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           <div className="flex items-center flex-col md:items-start">
-            <img 
-              src="https://spacegeneration.org/wp-content/uploads/2020/06/SGAC_New_Logo.png" 
-              alt="SGAC Logo" 
-              className="h-12 mb-4"
+            <img
+              src="src\images\AC25Logo.png"
+              alt="SGAC Logo"
+              className="h-28 mb-4"
+            />
+            <img
+              src="src\images\EPD-Logos-cutout.png"
+              alt="EPD Logo"
+              className="h-28 mb-4"
             />
             <div>
               <div className="text-xl font-bold">ACHIEVED Competition 2025</div>
               <div className="text-sm text-gray-400">Space Generation Advisory Council</div>
             </div>
           </div>
-          
+
           <div className="text-center md:text-left">
             <h4 className="text-lg font-bold mb-3 text-space-cyan">Quick Links</h4>
             <div className="space-y-2">
@@ -33,23 +38,23 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          
+
           <div className="text-center md:text-left">
             <h4 className="text-lg font-bold mb-3 text-space-cyan">Sponsorship Contact</h4>
             <p className="mb-2">Interested in becoming a sponsor?</p>
-            <a 
-              href="mailto:sponsorship@spacegeneration.org" 
+            <a
+              href="mailto:achieved-competition@spacegeneration.org"
               className="flex items-center justify-center md:justify-start text-space-cyan hover:underline"
             >
               <Mail className="w-4 h-4 mr-2" />
-              <span>sponsorship@spacegeneration.org</span>
+              <span>achieved-competition@spacegeneration.org</span>
             </a>
             <p className="mt-3 text-sm text-gray-400">
               Our sponsorship team will contact you within 24 hours to discuss partnership opportunities.
             </p>
           </div>
         </div>
-        
+
         <div className="border-t border-white/10 pt-6 flex flex-col md:flex-row justify-between items-center">
           <p className="text-sm text-gray-400 mb-4 md:mb-0">
             © {currentYear} Space Generation Advisory Council. All rights reserved.

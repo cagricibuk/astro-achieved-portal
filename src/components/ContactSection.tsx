@@ -3,28 +3,28 @@ import { Users, Mail } from "lucide-react";
 
 const team = [
   {
-    name: "Dr. Elena Kowalski",
-    role: "Competition Director",
-    email: "elena.k@spacegeneration.org",
-    image: "https://i.pravatar.cc/150?img=5"
+    name: "Maria Casanovas Crespo",
+    role: "ACHIEVED Competition Co-Lead",
+    email: "maria.casanovas@spacegeneration.org",
+    image: "src/images/maria.jpeg"
   },
   {
-    name: "Marcus Chen",
-    role: "Technical Coordinator",
-    email: "m.chen@spacegeneration.org",
-    image: "https://i.pravatar.cc/150?img=12"
+    name: "Serena Campioli",
+    role: "ACHIEVED Competition Co-Lead",
+    email: "serena.campioli@spacegeneration.org",
+    image: "src/images/serena.jpeg"
   },
   {
-    name: "Sophia Okafor",
-    role: "Outreach Manager",
-    email: "s.okafor@spacegeneration.org",
-    image: "https://i.pravatar.cc/150?img=16"
+    name: "Albert Nicolás López",
+    role:"ACHIEVED Competition Sponsorship Management",
+    email: "albert.nlopez@spacegeneration.org",
+    image: "src/images/Albert.jpeg"
   },
   {
-    name: "Carlos Rodriguez",
-    role: "Sponsorship Lead",
-    email: "c.rodriguez@spacegeneration.org",
-    image: "https://i.pravatar.cc/150?img=3"
+    name: "Daniel Ugbede Isah",
+    role: "ACHIEVED Competition Sponsorship Management",
+    email: "daniel.isah@spacegeneration.org",
+    image: "src/images/Isah.jpeg"
   }
 ];
 
@@ -40,7 +40,7 @@ const ContactSection = () => {
           <div className="w-20 h-1 bg-space-cyan mx-auto mb-8"></div>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
           {team.map((member, index) => (
             <div 
               key={index} 
@@ -76,8 +76,8 @@ const ContactSection = () => {
               </p>
               <div className="flex items-center mb-3">
                 <Mail className="w-5 h-5 mr-3 text-space-cyan" />
-                <a href="mailto:achieved@spacegeneration.org" className="text-space-cyan hover:underline">
-                  achieved@spacegeneration.org
+                <a href="mailto:achieved-competition@spacegeneration.org" className="text-space-cyan hover:underline">
+                achieved-competition@spacegeneration.org
                 </a>
               </div>
               <div className="mt-6">

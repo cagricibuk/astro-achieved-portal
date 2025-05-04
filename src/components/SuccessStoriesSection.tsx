@@ -2,28 +2,32 @@
 import { useState } from "react";
 import { Award, ArrowLeft, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { title } from "process";
 
 const successStories = [
   {
     name: "ACMATRON",
-    year: "2023",
-    description: "Developed an AI-powered satellite system that autonomously detects and predicts forest fires with 94% accuracy, now being implemented by three national space agencies.",
+    year: "2024",
+    title:"Lunar Resources Utilization",
+    description: "Cryogenic Storage System (CSS) Solution to Transform Wastes into useful gases (propellants) such as Oxygen, Methane & Ammonia",
     team: "International Space University Team",
-    image: "https://images.unsplash.com/photo-1487887235947-a955ef187fcc"
+    image: "src/images/acmatron-n.png"
   },
   {
     name: "VacuSpace",
-    year: "2022",
-    description: "Created a novel debris capture mechanism using vacuum technology, reducing cleanup mission costs by 60%. Currently in prototype testing with the European Space Agency.",
+    year: "2024",
+    title:"Space Debris Clean-Up",
+    description: "Solution for small debris in LEO by proposing an Active Debris Removal solution, by using Laser technology to target debris in the 1 to 10cm range",
     team: "MIT-Caltech Collaboration",
-    image: "https://images.unsplash.com/photo-1518359094545-074231ffb616"
+    image: "src/images/vacuspace-n.png"
   },
   {
-    name: "LunaGrow",
-    year: "2021",
-    description: "Pioneered a lunar soil enrichment technique enabling sustainable food production for long-duration missions. Technology being adapted for Mars habitation plans.",
+    name: "Paliyama",
+    year: "2024",
+    title:"Space Debris Tracking & Identification",
+    description: "Collaborative network leveraging a satellite-based internet structure where clients can request space debris data from a satellite constellation",
     team: "Tokyo-Berlin University Alliance",
-    image: "https://images.unsplash.com/photo-1451186859696-371d9477be93"
+    image: "src/images/paliyama-n.png"
   }
 ];
 
@@ -60,16 +64,16 @@ const SuccessStoriesSection = () => {
                       <img 
                         src={story.image} 
                         alt={story.name} 
-                        className="w-full h-full object-cover"
+                        className="w-64 h-64 object-cover"
                       />
                     </div>
-                    <div className="w-full md:w-3/5">
-                      <div className="flex items-center mb-3">
+                    <div className="w-full md:w-3/1">
+                      <div className="flex items-start mb-3">
                         <h3 className="text-2xl md:text-3xl font-bold text-white mr-3">{story.name}</h3>
                         <span className="bg-space-blue px-2 py-1 rounded text-sm text-space-cyan">{story.year}</span>
                       </div>
                       <p className="text-gray-300 mb-6">{story.description}</p>
-                      <p className="text-space-cyan font-medium">{story.team}</p>
+                      <p className="text-space-cyan font-medium">{story.title}</p>
                     </div>
                   </div>
                 </div>

@@ -1,58 +1,72 @@
 
-import { Award, BadgeDollarSign, Handshake } from "lucide-react";
+import { Award, BadgeDollarSign, Hand, Handshake, Rocket, Star } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 
 const SponsorshipSection = () => {
   const benefits = [
     {
       title: "Brand Visibility",
-      description: "Prominent logo placement across all ACHIEVED materials, global media coverage, and recognition at international space events. Your brand reaches over 15,000 young space professionals worldwide.",
-      icon: <BadgeDollarSign className="w-10 h-10 text-space-cyan" />
+      description: "Showcase your organization to influential international stakeholders including our panel of experts in the space domain, attendees and exhibitors at the IAC Sydney 2025.",
+      icon: <Rocket className="w-10 h-10 text-space-cyan" />
     },
     {
-      title: "Talent Access",
-      description: "Direct engagement with top emerging space professionals and innovative thinkers. Recruit from a pool of exceptional talent and forge relationships with the future leaders of the space industry.",
-      icon: <Handshake className="w-10 h-10 text-space-cyan" />
+      title: "Meet the Sponsors",
+      description: "Social media and newsletter promotional material that highlights your organization and your relevance towards the competition goals.",
+      icon: <Star className="w-10 h-10 text-space-cyan" />
+    },
+    {
+      title: "Source New Talents",
+      description: "Introduction to AC25 teams and to the SGAC network (35,000 young space professionals).",
+      icon: <Award className="w-10 h-10 text-space-cyan" />
     },
     {
       title: "Strategic Alliance",
-      description: "Association with leading space organizations like ESA, NASA, and UNOOSA along with prestigious academic institutions worldwide. Strengthen your position in the global space ecosystem.",
-      icon: <Award className="w-10 h-10 text-space-cyan" />
+      description: "Secure your place within SGAC's network of strategic partners. Strengthen your brand as a driving force behind the future space workforce.",
+      icon: <Handshake className="w-10 h-10 text-space-cyan" />
     }
   ];
 
   const sponsorshipLevels = [
     {
-      level: "Platinum",
-      price: "$25,000+",
+      level: "Astreoid",
+      price: "EUR 500€ / USD $565.07",
       benefits: [
-        "Keynote speaking opportunity at the Sydney final",
-        "Logo on all digital & printed materials (prominent placement)",
-        "Full access to participant database & exclusive networking events",
+        "Companies logo prominently displayed on all official presentations and event roll-up banners",
+        "Acknowledgment of company's support during the formal award segment of the Grand Final",
+        "Promotion via SGAC’s official social media channels and inclusion in the SGAC newsletter (1 publication)",
         "Featured content in SGAC newsletters & social media (10+ posts)",
-        "Invitation to judge final presentations"
+        "Invitation to judge final presentations",
+        "One guaranteed seat for your representative (in person or virtual) at the Grand Final event (observer)"
       ]
     },
     {
-      level: "Gold",
-      price: "$15,000",
+      level: "Galaxy",
+      price: "EUR 1000€ / USD $1130.14",
       benefits: [
-        "Panel speaking opportunity at the Sydney final",
-        "Logo on all digital & printed materials",
-        "Access to select participant information & networking events",
-        "Featured content in SGAC newsletters & social media (5+ posts)",
-        "Workshop opportunity with participants"
+        "Companies logo prominently displayed on all official presentations and event roll-up banners",
+        "Acknowledgment of company's support during the formal award segment of the Grand Final",
+        "Companies brochure or branded item in the official tote bag distributed at the Grand Final event",
+        "Promotion via SGAC’s official social media channels and inclusion in the SGAC newsletter (3 publications)",
+        "Access to profiles of participating teams and tailored SGAC profiles",
+        "Access to the full summary report of the competition, including key outcomes and statistics (reduced version)",
+        "Reserved seats for your representatives in the intermediate review sessions (observer)",
+        "One guaranteed seat for your representative (in person or virtual) at the Grand Final event (1 member in the jury panel)",
+        "Keynote speaking opportunity at the Grand final, either in person or virtually (5 min)",
       ]
     },
     {
-      level: "Silver",
-      price: "$7,500",
+      level: "Universe",
+      price: "EUR +1500€ / USD +$1695.20",
       benefits: [
-        "Recognition during the Sydney final events",
-        "Logo on digital materials",
-        "Networking reception invitation",
-        "Featured content in SGAC social media (2+ posts)",
-        "Display materials at competition events"
+        "Companies logo prominently displayed on all official presentations and event roll-up bannerss",
+        "Acknowledgment of companies support during the formal award segment of the Grand Final",
+        "Companies brochure or branded item in the official tote bag distributed at the Grand Final event",
+        "Promotion via SGAC’s official social media channels and inclusion in the SGAC newsletter (5+ publications)",
+        "Access to profiles of participating teams and tailored SGAC profiles",
+        "Access to the full summary report of the competition, including key outcomes and statistics",
+        "Reserved seats for your representatives in the intermediate review sessions (jury panel)",
+        "One guaranteed seat for your representative (in person or virtual) at the Grand Final event (3 members in the jury panel)",
+        "Keynote speaking opportunity at the Grand final, either in person or virtually (15 min)",
       ]
     }
   ];
@@ -71,7 +85,7 @@ const SponsorshipSection = () => {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
           {benefits.map((benefit, index) => (
             <div 
               key={index} 
@@ -88,7 +102,7 @@ const SponsorshipSection = () => {
         </div>
         
         <div className="mb-16 animate-fade-in">
-          <h3 className="text-3xl font-bold text-center mb-10">Sponsorship Packages</h3>
+          <h3 className="text-3xl font-bold text-center mb-10">Sponsorship Tiers</h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {sponsorshipLevels.map((level, index) => (
               <Card 

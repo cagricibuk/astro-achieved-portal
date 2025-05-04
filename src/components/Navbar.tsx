@@ -38,7 +38,7 @@ const Navbar = () => {
         {/* Logo */}
         <a href="#" className="flex items-center">
           <img 
-            src="https://spacegeneration.org/wp-content/uploads/2020/06/SGAC_New_Logo.png" 
+            src="src/images/AC25Logo.png" 
             alt="SGAC Logo" 
             className="h-8 mr-2"
           />
@@ -63,13 +63,10 @@ const Navbar = () => {
         </div>
 
         {/* Apply & Sponsor Buttons */}
-        <div className="hidden lg:flex gap-4">
+        <div className="hidden lg:flex items-center">
           <Button className="bg-space-light-blue hover:bg-space-cyan text-background"
             onClick={() => document.getElementById('sponsorship')?.scrollIntoView({ behavior: 'smooth' })}>
             Sponsor Now
-          </Button>
-          <Button className="bg-space-cyan hover:bg-space-light-blue text-background">
-            Apply Now
           </Button>
         </div>
 
@@ -119,12 +116,6 @@ const Navbar = () => {
             }}
           >
             Sponsor Now
-          </Button>
-          <Button 
-            className="w-full bg-space-cyan hover:bg-space-light-blue text-background"
-            onClick={() => setMobileMenuOpen(false)}
-          >
-            Apply Now
           </Button>
         </div>
       </div>

@@ -4,34 +4,45 @@ import { CalendarDays } from "lucide-react";
 const timeline = [
   {
     phase: "Applications Open",
-    date: "Jan 15, 2025",
+    date: "Jan 10 - February 17  2025",
     description: "Submit your innovative proposals"
   },
   {
-    phase: "Initial Reviews",
-    date: "Mar 30, 2025",
+    phase: "Kickoff Meeting",
+    date: "March 9, 2025",
+    description: "The ACHIEVED Competition Takes-off!"
+  },
+  {
+    phase: "Mission Design Review (MDR)",                         
+    date: "Apr 12, 2025",
     description: "First round of expert evaluations"
   },
   {
     phase: "Team Development",
-    date: "Apr - Jul 2025",
+    date: "Apr - June 2025",
     description: "Mentorship and project refinement"
   },
   {
-    phase: "Finalist Selection",
-    date: "Aug 15, 2025",
-    description: "Top teams announced"
+    phase: "Preliminary Design Review (PDR)",
+    date: "Jun 14-15, 2025",
+    description: "Second round of expert evaluations"
   },
   {
-    phase: "Final Event in Sydney",
-    date: "Oct 5-7, 2025",
-    description: "Pitch to global space leaders"
+    phase: "Team Development",
+    date: "Jun - Aug, 2025",
+    description: "Mentorship and project refinement"
+  },
+  { 
+    phase: "Final Design Review (FDR)",
+    date: "August (TBC), 2025",
+    description: "Final round of expert evaluations and Top 3 teams selected"
   },
   {
-    phase: "Results & Awards",
-    date: "Oct 8, 2025",
-    description: "Winners announced"
+    phase: "Grand Final",
+    date: "September 28, 2025",
+    description: "Presentation of projects to the jury and audience in Sydney, Australia and winner announcement"
   }
+
 ];
 
 const TimelineSection = () => {

@@ -1,5 +1,6 @@
 
-import { Users, Mail } from "lucide-react";
+import { Users, Mail, User, Building } from "lucide-react";
+import { ContactForm } from "./ContactForm";
 
 const team = [
   {
@@ -89,36 +90,7 @@ const ContactSection = () => {
               </div>
             </div>
             <div>
-              <form>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-                  <input 
-                    type="text" 
-                    placeholder="Name" 
-                    className="bg-white/5 border border-white/10 rounded-md px-4 py-2 w-full text-white focus:border-space-cyan focus:outline-none"
-                  />
-                  <input 
-                    type="email" 
-                    placeholder="Email" 
-                    className="bg-white/5 border border-white/10 rounded-md px-4 py-2 w-full text-white focus:border-space-cyan focus:outline-none"
-                  />
-                </div>
-                <input 
-                  type="text" 
-                  placeholder="Subject" 
-                  className="bg-white/5 border border-white/10 rounded-md px-4 py-2 w-full text-white mb-4 focus:border-space-cyan focus:outline-none"
-                />
-                <textarea 
-                  placeholder="Message" 
-                  rows={4}
-                  className="bg-white/5 border border-white/10 rounded-md px-4 py-2 w-full text-white mb-4 focus:border-space-cyan focus:outline-none"
-                ></textarea>
-                <button 
-                  type="submit" 
-                  className="bg-space-cyan hover:bg-space-light-blue text-background font-bold py-2 px-6 rounded-md transition-all w-full"
-                >
-                  Send Message
-                </button>
-              </form>
+              <ContactForm />
             </div>
           </div>
         </div>

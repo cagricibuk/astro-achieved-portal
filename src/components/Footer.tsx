@@ -10,12 +10,12 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           <div className="flex items-center flex-col md:items-start">
             <img
-              src="https://raw.githubusercontent.com/cagricibuk/astro-achieved-portal/refs/heads/main/src/images/AC25Logo.png?token=GHSAT0AAAAAAC4ODYWJX76PVKK2V5T7WLCI2AXQ4LQ"
+              src="https://raw.githubusercontent.com/cagricibuk/astro-achieved-portal/refs/heads/main/src/images/AC25Logo.png"
               alt="SGAC Logo"
               className="h-28 mb-4"
             />
             <img
-              src="https://raw.githubusercontent.com/cagricibuk/astro-achieved-portal/refs/heads/main/src/images/EPD-Logos-cutout.png?token=GHSAT0AAAAAAC4ODYWIMHSUCPIWU5XDY5PW2AXQY4Q"
+              src="https://raw.githubusercontent.com/cagricibuk/astro-achieved-portal/refs/heads/main/src/images/EPD-Logos-cutout.png"
               alt="EPD Logo"
               className="h-28 mb-4"
             />

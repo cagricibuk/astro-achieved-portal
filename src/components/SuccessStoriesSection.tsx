@@ -11,7 +11,7 @@ const successStories = [
     title:"Lunar Resources Utilization",
     description: "Cryogenic Storage System (CSS) Solution to Transform Wastes into useful gases (propellants) such as Oxygen, Methane & Ammonia",
     team: "International Space University Team",
-    image: "https://raw.githubusercontent.com/cagricibuk/astro-achieved-portal/refs/heads/main/src/images/acmatron-n.png?token=GHSAT0AAAAAAC4ODYWJV3A4LKD2QNDHKPOS2AXQZAA"
+    image: "https://raw.githubusercontent.com/cagricibuk/astro-achieved-portal/refs/heads/main/src/images/acmatron-n.png"
   },
   {
     name: "VacuSpace",
@@ -19,7 +19,7 @@ const successStories = [
     title:"Space Debris Clean-Up",
     description: "Solution for small debris in LEO by proposing an Active Debris Removal solution, by using Laser technology to target debris in the 1 to 10cm range",
     team: "MIT-Caltech Collaboration",
-    image: "https://raw.githubusercontent.com/cagricibuk/astro-achieved-portal/refs/heads/main/src/images/vacuspace-n.png?token=GHSAT0AAAAAAC4ODYWIAGCEDXIKRRMGFAH62AXQZUQ"
+    image: "https://raw.githubusercontent.com/cagricibuk/astro-achieved-portal/refs/heads/main/src/images/vacuspace-n.png"
   },
   {
     name: "Paliyama",
@@ -27,7 +27,7 @@ const successStories = [
     title:"Space Debris Tracking & Identification",
     description: "Collaborative network leveraging a satellite-based internet structure where clients can request space debris data from a satellite constellation",
     team: "Tokyo-Berlin University Alliance",
-    image: "https://raw.githubusercontent.com/cagricibuk/astro-achieved-portal/refs/heads/main/src/images/paliyama-n.png?token=GHSAT0AAAAAAC4ODYWICCXGNXGR4OB4SGHG2AXQZRQ"
+    image: "https://raw.githubusercontent.com/cagricibuk/astro-achieved-portal/refs/heads/main/src/images/paliyama-n.png"
   }
 ];
 

@@ -17,7 +17,7 @@ const HeroSection = () => {
       {/* SGAC Logo */}
       <div className="mb-8">
         <img 
-          src="https://raw.githubusercontent.com/cagricibuk/astro-achieved-portal/refs/heads/main/src/images/AC25Logo.png?token=GHSAT0AAAAAAC4ODYWJX7TJ4ZYJWRL35Q7C2AXQVYA" 
+          src="https://raw.githubusercontent.com/cagricibuk/astro-achieved-portal/refs/heads/main/src/images/AC25Logo.png" 
           alt="SGAC Logo" 
           className="h-64 md:h-64"
         />

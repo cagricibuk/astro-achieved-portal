@@ -6,25 +6,25 @@ const team = [
     name: "Maria Casanovas Crespo",
     role: "ACHIEVED Competition Co-Lead",
     email: "maria.casanovas@spacegeneration.org",
-    image: "https://raw.githubusercontent.com/cagricibuk/astro-achieved-portal/refs/heads/main/src/images/maria.jpeg?token=GHSAT0AAAAAAC4ODYWIQLKQEF2PABOXY2FK2AXQZQA"
+    image: "https://raw.githubusercontent.com/cagricibuk/astro-achieved-portal/refs/heads/main/src/images/maria.jpeg"
   },
   {
     name: "Serena Campioli",
     role: "ACHIEVED Competition Co-Lead",
     email: "serena.campioli@spacegeneration.org",
-    image: "https://raw.githubusercontent.com/cagricibuk/astro-achieved-portal/refs/heads/main/src/images/serena.jpeg?token=GHSAT0AAAAAAC4ODYWJUQQVLBYIAPDSTMHS2AXQZTQ"
+    image: "https://raw.githubusercontent.com/cagricibuk/astro-achieved-portal/refs/heads/main/src/images/serena.jpeg"
   },
   {
     name: "Albert Nicolás López",
     role:"ACHIEVED Competition Sponsorship Management",
     email: "albert.nlopez@spacegeneration.org",
-    image: "https://raw.githubusercontent.com/cagricibuk/astro-achieved-portal/refs/heads/main/src/images/Albert.jpeg?token=GHSAT0AAAAAAC4ODYWJVNQ2BUPH7IDL6RZ42AXQY3A"
+    image: "https://raw.githubusercontent.com/cagricibuk/astro-achieved-portal/refs/heads/main/src/images/Albert.jpeg"
   },
   {
     name: "Daniel Ugbede Isah",
     role: "ACHIEVED Competition Sponsorship Management",
     email: "daniel.isah@spacegeneration.org",
-    image: "https://raw.githubusercontent.com/cagricibuk/astro-achieved-portal/refs/heads/main/src/images/Isah.jpeg?token=GHSAT0AAAAAAC4ODYWJMUXHBJA4RY3X7NJS2AXQY6A"
+    image: "https://raw.githubusercontent.com/cagricibuk/astro-achieved-portal/refs/heads/main/src/images/Isah.jpeg"
   }
 ];
 

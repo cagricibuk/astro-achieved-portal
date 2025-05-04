@@ -28,10 +28,14 @@ const formSchema = z.object({
 
 type FormValues = z.infer<typeof formSchema>;
 
-const supabaseUrl = import.meta.env.VITE_SUPABASE_URL || "";
-const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY || "";
+// Make sure we have fallbacks in case environment variables are undefined
+const supabaseUrl = import.meta.env.VITE_SUPABASE_URL;
+const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY;
 
-const supabase = createClient(supabaseUrl, supabaseAnonKey);
+// Only create the client if both URL and key are available
+const supabase = supabaseUrl && supabaseAnonKey 
+  ? createClient(supabaseUrl, supabaseAnonKey)
+  : null;
 
 export function ContactForm() {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -50,6 +54,11 @@ export function ContactForm() {
   async function onSubmit(data: FormValues) {
     try {
       setIsSubmitting(true);
+      
+      // Check if Supabase client is initialized
+      if (!supabase) {
+        throw new Error("Supabase connection is not configured properly. Please check your environment variables.");
+      }
       
       const { error } = await supabase
         .from("contact_submissions")

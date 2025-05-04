@@ -1,3 +1,4 @@
+
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
@@ -27,8 +28,8 @@ const formSchema = z.object({
 
 type FormValues = z.infer<typeof formSchema>;
 
-// Using the provided anon key
-const supabaseUrl = "https://kiaolsfzppdboluwosoib.supabase.co"; // Standard URL format for Supabase
+// Using the provided anon key and correct URL
+const supabaseUrl = "https://kiaolsfzppdboluwsoib.supabase.co"; // Corrected URL
 const supabaseAnonKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtpYW9sc2Z6cHBkYm9sdXdzb2liIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDUzNDc4OTIsImV4cCI6MjA2MDkyMzg5Mn0.qw948NSs_whx-a85AYABkN0Mngx55fETrdGA9pK3z54";
 
 // Create the Supabase client

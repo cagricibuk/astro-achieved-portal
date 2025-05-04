@@ -1,4 +1,3 @@
-
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
@@ -28,14 +27,12 @@ const formSchema = z.object({
 
 type FormValues = z.infer<typeof formSchema>;
 
-// Make sure we have fallbacks in case environment variables are undefined
-const supabaseUrl = import.meta.env.VITE_SUPABASE_URL;
-const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY;
+// Using the provided anon key
+const supabaseUrl = "https://kiaolsfzppdboluwosoib.supabase.co"; // Standard URL format for Supabase
+const supabaseAnonKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtpYW9sc2Z6cHBkYm9sdXdzb2liIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDUzNDc4OTIsImV4cCI6MjA2MDkyMzg5Mn0.qw948NSs_whx-a85AYABkN0Mngx55fETrdGA9pK3z54";
 
-// Only create the client if both URL and key are available
-const supabase = supabaseUrl && supabaseAnonKey 
-  ? createClient(supabaseUrl, supabaseAnonKey)
-  : null;
+// Create the Supabase client
+const supabase = createClient(supabaseUrl, supabaseAnonKey);
 
 export function ContactForm() {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -54,11 +51,6 @@ export function ContactForm() {
   async function onSubmit(data: FormValues) {
     try {
       setIsSubmitting(true);
-      
-      // Check if Supabase client is initialized
-      if (!supabase) {
-        throw new Error("Supabase connection is not configured properly. Please check your environment variables.");
-      }
       
       const { error } = await supabase
         .from("contact_submissions")

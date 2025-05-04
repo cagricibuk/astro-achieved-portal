@@ -38,7 +38,7 @@ const Navbar = () => {
         {/* Logo */}
         <a href="#" className="flex items-center">
           <img 
-            src="https://github.com/cagricibuk/astro-achieved-portal/blob/main/src/images/AC25Logo.png?raw=true" 
+            src="https://raw.githubusercontent.com/cagricibuk/astro-achieved-portal/refs/heads/main/src/images/AC25Logo.png?token=GHSAT0AAAAAAC4ODYWJOZOAQEBTSKJWZAPQ2AXQ22A" 
             alt="SGAC Logo" 
             className="h-8 mr-2"
           />

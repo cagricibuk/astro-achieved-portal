@@ -31,7 +31,7 @@ const ChallengesSection = () => {
             </div>
             <div className="h-40 mb-6 rounded-md overflow-hidden">
               <img
-                src="src\images\ch1.jpeg"
+                src="https://raw.githubusercontent.com/cagricibuk/astro-achieved-portal/refs/heads/main/src/images/ch1.jpeg?token=GHSAT0AAAAAAC4ODYWIVPQ6MUVCKB27OLYQ2AXQZBQ"
                 alt="Sustainable Space Operations"
                 className="w-full h-full object-cover"
               />
@@ -49,7 +49,7 @@ const ChallengesSection = () => {
             </div>
             <div className="h-40 mb-6 rounded-md overflow-hidden">
               <img
-                src="src\images\ch2.png"
+                src="https://raw.githubusercontent.com/cagricibuk/astro-achieved-portal/refs/heads/main/src/images/ch2.png?token=GHSAT0AAAAAAC4ODYWJXB4IRF7SOCJ4SNFS2AXQZFA"
                 alt="Drought Mitigation with Space Tech"
                 className="w-full h-full object-cover"
               />
@@ -69,7 +69,7 @@ const ChallengesSection = () => {
             </div>
             <div className="h-40 mb-6 rounded-md overflow-hidden">
               <img
-                src="src\images\ch3.jpg"
+                src="https://raw.githubusercontent.com/cagricibuk/astro-achieved-portal/refs/heads/main/src/images/ch3.jpg?token=GHSAT0AAAAAAC4ODYWJZXDAPQJSISQMHQE42AXQZHA"
                 alt="Mars Exploration Safety"
                 className="w-full h-full object-cover"
               />

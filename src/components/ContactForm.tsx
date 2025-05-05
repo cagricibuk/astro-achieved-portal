@@ -16,12 +16,12 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { supabase, initializeDatabase } from "@/utils/supabaseSetup";
+import { supabase } from "@/integrations/supabase/client";
 
 const formSchema = z.object({
   name: z.string().min(2, { message: "Name must be at least 2 characters." }),
   email: z.string().email({ message: "Please enter a valid email address." }),
-  company: z.string().optional(),
+  company: z.string().min(1, { message: "Company name is required." }),
   subject: z.string().min(3, { message: "Subject must be at least 3 characters." }),
   message: z.string().min(10, { message: "Message must be at least 10 characters." }),
 });
@@ -30,11 +30,6 @@ type FormValues = z.infer<typeof formSchema>;
 
 export function ContactForm() {
   const [isSubmitting, setIsSubmitting] = useState(false);
-  
-  // Initialize the database table when component mounts
-  useEffect(() => {
-    initializeDatabase();
-  }, []);
   
   const form = useForm<FormValues>({
     resolver: zodResolver(formSchema),
@@ -57,7 +52,7 @@ export function ContactForm() {
           {
             name: data.name,
             email: data.email,
-            company: data.company || null,
+            company: data.company,
             subject: data.subject,
             message: data.message,
             created_at: new Date().toISOString(),
@@ -126,7 +121,7 @@ export function ContactForm() {
               <FormLabel className="text-gray-300">Company</FormLabel>
               <FormControl>
                 <Input
-                  placeholder="Your company (optional)"
+                  placeholder="Your company"
                   className="bg-white/5 border border-white/10 text-white focus:border-space-cyan focus-visible:ring-space-cyan"
                   {...field}
                 />

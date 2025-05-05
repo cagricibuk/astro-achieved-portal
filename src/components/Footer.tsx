@@ -9,16 +9,18 @@ const Footer = () => {
       <div className="max-w-6xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           <div className="flex items-center flex-col md:items-start">
-            <img
-              src="https://raw.githubusercontent.com/cagricibuk/astro-achieved-portal/refs/heads/main/src/images/AC25Logo.png"
-              alt="SGAC Logo"
-              className="h-28 mb-4"
-            />
-            <img
-              src="https://raw.githubusercontent.com/cagricibuk/astro-achieved-portal/refs/heads/main/src/images/EPD-Logos-cutout.png"
-              alt="EPD Logo"
-              className="h-28 mb-4"
-            />
+            <div className="flex flex-row items-center gap-4 mb-4"> {/* Added flex row container */}
+              <img
+                src="https://raw.githubusercontent.com/cagricibuk/astro-achieved-portal/refs/heads/main/src/images/AC25Logo.png"
+                alt="SGAC Logo"
+                className="h-28"
+              />
+              <img
+                src="https://raw.githubusercontent.com/cagricibuk/astro-achieved-portal/refs/heads/main/src/images/EPD-Logos-cutout.png"
+                alt="EPD Logo"
+                className="h-28"
+              />
+            </div>
             <div>
               <div className="text-xl font-bold">ACHIEVED Competition 2025</div>
               <div className="text-sm text-gray-400">Space Generation Advisory Council</div>

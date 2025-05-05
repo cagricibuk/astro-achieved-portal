@@ -28,7 +28,7 @@ const SponsorshipSection = () => {
 
   const sponsorshipLevels = [
     {
-      level: "Astreoid",
+      level: "Asteroid",
       price: "EUR 500€ / USD $565.07",
       benefits: [
         "Companies logo prominently displayed on all official presentations and event roll-up banners",

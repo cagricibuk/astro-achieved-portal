@@ -41,6 +41,14 @@ const HeroSection = () => {
           >
             Become a Sponsor
           </Button>
+          <Button
+            size="lg"
+            variant="outline"
+            className="border-space-cyan text-space-cyan hover:bg-space-cyan/10 text-lg font-bold px-8 py-6 rounded-md transition-all transform hover:scale-105"
+            onClick={() => document.getElementById('sponsors')?.scrollIntoView({ behavior: 'smooth' })}
+          >
+            View Our Sponsors
+          </Button>
         </div>
       </div>
     </section>

@@ -33,6 +33,7 @@ const Footer = () => {
               <div><a href="#about" className="hover:text-space-cyan transition-colors">About ACHIEVED</a></div>
               <div><a href="#challenges" className="hover:text-space-cyan transition-colors">Competition Challenges</a></div>
               <div><a href="#timeline" className="hover:text-space-cyan transition-colors">Timeline</a></div>
+              <div><a href="#sponsors" className="hover:text-space-cyan transition-colors">Our Sponsors</a></div>
               <div>
                 <a href="#sponsorship" className="text-space-cyan hover:underline font-medium">
                   Sponsorship Opportunities

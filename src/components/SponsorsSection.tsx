@@ -5,13 +5,13 @@ const SponsorsSection = () => {
   const sponsors = [
     {
       name: "Nova Space",
-      logo: "https://raw.githubusercontent.com/cagricibuk/astro-achieved-portal/refs/heads/main/src/images/nova-space-logo.png",
-      description: "Pioneering space technology solutions"
+      logo: "https://novaspaceinc.com/wp-content/uploads/2022/08/Nova-Space-LO-FFcolor.png",
+      description: "Setting the space industry standard for professional development."
     },
     {
       name: "Spicy SE",
-      logo: "https://raw.githubusercontent.com/cagricibuk/astro-achieved-portal/refs/heads/main/src/images/spicy-se-logo.png",
-      description: "Innovative space engineering"
+      logo: "https://spicy-se.com/images/logo/Spicy_SE_Logo_Text.jpg",
+      description: "A revolution in Systems Engineering"
     }
   ];
 

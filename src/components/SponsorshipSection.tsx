@@ -102,7 +102,7 @@ const SponsorshipSection = () => {
         </div>
         
         <div className="mb-16 animate-fade-in">
-          <h3 className="text-3xl font-bold text-center mb-10">Sponsorship Tiers</h3>
+          <h3 className="text-3xl font-bold text-center mb-10">Sponsorship Opportunities</h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {sponsorshipLevels.map((level, index) => (
               <Card 
@@ -112,7 +112,7 @@ const SponsorshipSection = () => {
                 <CardHeader>
                   <CardTitle className="text-2xl font-bold text-center">{level.level}</CardTitle>
                   <CardDescription className="text-xl text-center text-space-cyan font-bold">
-                    {level.price}
+                   
                   </CardDescription>
                 </CardHeader>
                 <CardContent>

@@ -59,7 +59,10 @@ export function ContactForm() {
           },
         ]);
 
-      if (error) throw error;
+      if (error) {
+        console.error("Supabase error:", error);
+        throw error;
+      }
 
       toast.success("Thank you! Your message has been sent successfully.");
       form.reset();
@@ -121,7 +124,7 @@ export function ContactForm() {
               <FormLabel className="text-gray-300">Company</FormLabel>
               <FormControl>
                 <Input
-                  placeholder="Your company"
+                  placeholder="Your company (required)"
                   className="bg-white/5 border border-white/10 text-white focus:border-space-cyan focus-visible:ring-space-cyan"
                   {...field}
                 />
